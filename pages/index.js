@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { NFT_CONTRACT_ADDRESS, abi } from "constants";
@@ -20,7 +21,6 @@ export default function Home() {
     if (accountStatus) {
       return (
         <>
-          <h3>&nbsp;</h3>
           <p>
             You can mint some kind of NFT or select a specific nft from the
             gallery. <br /> You can mint only one NFT for address!
